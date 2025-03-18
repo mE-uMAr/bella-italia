@@ -3,183 +3,469 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/assets/css/events.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair Display">
-</head>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/events.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,500,600,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Italiana&display=swap">
+    <title>Events | Bella Italia</title>
 </head>
 <body>
-    <div class="header">
+    <div class="header" id="header">
         <div class="head-one">
             <span class="left-head-one">
-                <span style="display: flex;gap: 10px;">
+                <span class="contact-item">
                     <i class="fa-solid fa-envelope"></i>
-                    <p>INFO@MAIL.COM</p>
+                    <p>INFO@BELLAITALIA.COM</p>
                 </span>   
-                <span  style="display: flex;gap: 10px;">
+                <span class="contact-item">
                     <i class="fa-solid fa-phone"></i>
                     <p>964-622-3903</p>
                 </span> 
             </span>
             <span class="right-head-one">
-                <span style="display: flex;" class="head-search">
+                <span class="head-search">
                     <span class="search-icon">
-                        <i style="font-size: 10px;" class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-magnifying-glass"></i>
                     </span>
-                    <input class="search-bar" type="search">
+                    <input class="search-bar" type="search" placeholder="Search...">
                 </span>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-instagram"></i>
+                <div class="social-icons">
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
             </span>
         </div>
         <div class="head-two">
             <span class="icon-head">
-                <a style="text-decoration: none;" href="index.html"><span style="color: #8b0000; cursor: pointer;">Bella <span style="color: #808000;">Italia</span></span></a>
+                <a href="/index.html">
+                    <span class="logo-text">Bella <span class="logo-accent">Italia</span></span>
+                </a>
             </span>
-            <span style="display: flex; gap: 2vw;" class="pages">
-                <i id="bars-logo" style="color: #8b0000;cursor: pointer;" class="fa-solid fa-bars"></i>
-                    <div style="gap: 2vw;display: none;" class="pages-txt">
-                        <a href="/pages/reservation.html">RESERVATION</a>
-                        <a href="#">MENU</a>
-                        <a href="/pages/events.html">EVENTS</a>
-                        <a href="/pages/about.html">ABOUT US</a>
-                        <a href="#">CONTACT</a>
-                    </div>
-                <hr style="border: 1px solid #8b0000;">
-                <i style="color: #8b0000;cursor: pointer;margin-right: 8vw;" class="fa-solid fa-cart-shopping"></i>
-            </span>
-        </div>
-    </div>
-    <div class="events">
-        <div class="head-events">
-            <h1 class="event-heading" style="color: #8b0000; font-family: 'Playfair Display'; font-size: 50px;font-weight: 520;">Upcoming Events</h1>
-            <p class="event-txt" style="color: #818080; margin-top: 2vh;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos deleniti accusantium tenetur officia ipsa.</p>
-            <p class="event-txt" style="color: #818080;"> Eos deleniti accusantium tenetur officia ipsa. consectetur adipisicing elit.</p>
-        </div>
-        <div class="event-bar">
-            <div class="event-div">
-                <!-- <img src="/assets/img/event-1.jpg" alt="Event-1"> -->
-                 <div class="event-img-1"></div>
-                 <div style="margin-left: 1vw; margin-top: 2vh;">
-                    <h1 class="event-label" style="font-size: x-large;color: #333333;">Name of event</h1>
-                    <a class="event-bar-btn" style="color: #808000;" href="#">View Menu</a>
-                 </div>
-            </div>
-            <div class="event-div">
-                 <div class="event-img-2"></div>
-                 <div style="margin-left: 1vw; margin-top: 2vh;">
-                    <h1 class="event-label" style="font-size: x-large;color: #333333;">Name of event</h1>
-                    <a class="event-bar-btn" style="color: #808000;" href="#">View Menu</a>
-                 </div>
-            </div>
-            <div class="event-div">
-                 <div class="event-img-3"></div>
-                 <div style="margin-left: 1vw; margin-top: 2vh;">
-                    <h1 class="event-label" style="font-size: x-large;color: #333333;">Name of event</h1>
-                    <a class="event-bar-btn"  style="color: #808000;" href="#">View Menu</a>
-                 </div>
-            </div>
-            <!-- <div class="event-div">
-                 <div class="event-img-4"></div>
-                 <div style="margin-left: 1vw; margin-top: 2vh;">
-                    <h1 class="event-label" style="font-size: x-large;color: #333333;">Name of event</h1>
-                    <a class="event-bar-btn"  style="color: #808000;" href="#">View Menu</a>
-                 </div>
-            </div>
-            <div class="event-div">
-                 <div class="event-img-5"></div>
-                 <div style="margin-left: 1vw; margin-top: 2vh;">
-                    <h1 class="event-label" style="font-size: x-large;color: #333333;">Name of event</h1>
-                    <a  class="event-bar-btn" style="color: #808000;" href="#">View Menu</a>
-                 </div>
-            </div>
-            <div class="event-div">
-                 <div class="event-img-6"></div>
-                 <div style="margin-left: 1vw; margin-top: 2vh;">
-                    <h1 class="event-label" style="font-size: x-large;color: #333333;">Name of event</h1>
-                    <a class="event-bar-btn"  style="color: #808000;" href="#">View Menu</a>
-                 </div>
-            </div>
-            <div class="event-div">
-                 <div class="event-img-7"></div>
-                 <div style="margin-left: 1vw; margin-top: 2vh;">
-                    <h1 class="event-label" style="font-size: x-large;color: #333333;">Name of event</h1>
-                    <a class="event-bar-btn"  style="color: #808000;" href="#">View Menu</a>
-                 </div>
-            </div>
-            </div> -->
-            <!-- <div class="event-div"></div> -->
-                 <!-- <div class="event-img-8"></div>
-                 <div style="margin-left: 1vw; margin-top: 2vh;">
-                    <h1 class="event-label" style="font-size: x-large;color: #333333;">Name of event</h1>
-                    <a class="event-bar-btn"  style="color: #808000;" href="#">View Menu</a>
-                 </div> -->
-                  <!-- <div class="event-img-9"></div>
-                 <div style="margin-left: 1vw; margin-top: 2vh;">
-                    <h1 class="event-label" style="font-size: x-large;color: #333333;">Name of event</h1>
-                    <a class="event-bar-btn"  style="color: #808000;" href="#">View Menu</a>
-                 </div>
-                  <div class="event-img-10"></div>
-                 <div style="margin-left: 1vw; margin-top: 2vh;">
-                    <h1 class="event-label" style="font-size: x-large;color: #333333;">Name of event</h1>
-                    <a class="event-bar-btn"  style="color: #808000;" href="#">View Menu</a>
-                 </div> -->
-            </div>
-                <div style="display: flex; justify-content: center; gap: 2vw;">
-                    <span id="prevBtn" class="event-btn"><</span>
-                    <span id="nxtBtn" class="event-btn">></span>
+            <span class="pages">
+                <i id="bars-logo" class="fa-solid fa-bars"></i>
+                <div class="pages-txt">
+                    <a href="/index.html">HOME</a>
+                    <a href="/pages/menu.html">MENU</a>
+                    <a href="/pages/reservation.html">RESERVATION</a>
+                    <a href="/pages/events.html" class="active">EVENTS</a>
+                    <a href="/pages/about.html">ABOUT US</a>
+                    <a href="/pages/contact.html">CONTACT</a>
                 </div>
-        </div>
-        <br>
-<footer>
-    <div style="width: 50%;margin-top: 5vh;">
-        <span style="color: #8b0000; font-weight: 700;font-size: xx-large;">Bella <span style="color: #808000;">Italia</span></span>
-        <br><br>
-        <p class="footer-txt" style="color: #818080;">Wellcome to bella italia where the  rich flavors of italy comes alive in every dish we serve.Nested in the heart of community, owr family owned restaurant.</p>
-        <br>
-        <div class="footer-logo" style="display: flex;gap: 10px;margin-top: 5vh;">
-            <i style="color: #8b0000;" class="fa-brands fa-twitter"></i>
-            <i style="color: #8b0000;" class="fa-brands fa-facebook-f"></i>
-            <i style="color: #8b0000;" class="fa-brands fa-instagram"></i>
+                <div class="cart-icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-count">0</span>
+                </div>
+            </span>
         </div>
     </div>
-    <hr>
-    <div style="display: flex;flex-direction: column;margin-top: 7vh;">
-        <h3 class="footer-heading">ABOUT FORM</h3>
-        <br>
-        <a href="#">Reservation</a>
-        <br>
-        <a href="#">Events</a>
-        <br>
-        <a href="#">About Us</a>
-        <br>
-        <a href="#">Contact Us</a>
-        <br>
+
+    <div class="page-banner">
+        <div class="banner-overlay"></div>
+        <div class="banner-content">
+            <h1>Events & Special Occasions</h1>
+            <div class="breadcrumbs">
+                <a href="/index.html">Home</a> / <span>Events</span>
+            </div>
+        </div>
     </div>
-    <hr>
-    <div style="display: flex;flex-direction: column;margin-top: 7vh;">
-        <h3 class="footer-heading">CONTACT</h3>
-        <br>
-        <a href="#">info@form.com</a>
-        <br>
-        <a href="#">882-587-3025</a>
-        <br>
-        <a href="#">616 Willa River Suite 610</a>
-        <br>
+
+    <div class="events-intro">
+        <div class="events-intro-content">
+            <h2>Celebrate at Bella Italia</h2>
+            <p>Whether you're planning a romantic dinner, family celebration, or corporate event, Bella Italia offers the perfect setting for your special occasion. Our dedicated team will work with you to create a memorable experience tailored to your needs.</p>
+            <p>From intimate gatherings to large parties, we provide exceptional service, authentic Italian cuisine, and a warm, inviting atmosphere that will make your event truly special.</p>
+        </div>
     </div>
-    <div style="display: flex;flex-direction: column; gap: 2vh;margin-top: 15vh;">
-        <input style="height: 5vh;border-radius: 30px; width: 10vw;background-color: white;border: 1.5px solid #808000;" type="text" placeholder="Email">
-        <input style="height: 5vh;border-radius: 30px; width: 10vw; background-color: #808000;color: white;border: none;" type="submit" value="SUBMIT">
+
+    <div class="upcoming-events">
+        <h2>Upcoming Special Events</h2>
+        <p class="subtitle">Join us for these exciting culinary experiences</p>
+        
+        <div class="events-grid">
+            <div class="event-card">
+                <div class="event-image" style="background-image: url('assets/img/event-1.jpg')">
+                    <div class="event-date">
+                        <span class="day">15</span>
+                        <span class="month">JUN</span>
+                    </div>
+                </div>
+                <div class="event-details">
+                    <h3>Wine Tasting Night</h3>
+                    <div class="event-meta">
+                        <p><i class="fa-regular fa-clock"></i> 7:00 PM - 10:00 PM</p>
+                        <p><i class="fa-solid fa-ticket"></i> $65 per person</p>
+                    </div>
+                    <p class="event-description">Experience the finest Italian wines paired with delicious appetizers. Our sommelier will guide you through a selection of wines from different regions of Italy, explaining their unique characteristics and perfect food pairings.</p>
+                    <a href="#" class="event-button">BOOK NOW</a>
+                </div>
+            </div>
+            
+            <div class="event-card">
+                <div class="event-image" style="background-image: url('assets/img/event-1.jpg')">
+                    <div class="event-date">
+                        <span class="day">22</span>
+                        <span class="month">JUN</span>
+                    </div>
+                </div>
+                <div class="event-details">
+                    <h3>Pasta Making Class</h3>
+                    <div class="event-meta">
+                        <p><i class="fa-regular fa-clock"></i> 3:00 PM - 6:00 PM</p>
+                        <p><i class="fa-solid fa-ticket"></i> $75 per person</p>
+                    </div>
+                    <p class="event-description">Learn to make authentic Italian pasta from our master chef. This hands-on class will teach you the techniques for creating perfect pasta dough and shaping various pasta types. Enjoy your creations with wine at the end of the class.</p>
+                    <a href="#" class="event-button">BOOK NOW</a>
+                </div>
+            </div>
+            
+            <div class="event-card">
+                <div class="event-image" style="background-image: url('assets/img/event-1.jpg')">
+                    <div class="event-date">
+                        <span class="day">05</span>
+                        <span class="month">JUL</span>
+                    </div>
+                </div>
+                <div class="event-details">
+                    <h3>Italian Opera Night</h3>
+                    <div class="event-meta">
+                        <p><i class="fa-regular fa-clock"></i> 6:30 PM - 10:30 PM</p>
+                        <p><i class="fa-solid fa-ticket"></i> $95 per person</p>
+                    </div>
+                    <p class="event-description">Enjoy a special four-course menu while listening to beautiful Italian opera. Our guest performers will serenade you with classic arias as you indulge in a carefully curated menu paired with fine Italian wines.</p>
+                    <a href="#" class="event-button">BOOK NOW</a>
+                </div>
+            </div>
+            
+            <div class="event-card">
+                <div class="event-image" style="background-image: url('assets/img/event-1.jpg')">
+                    <div class="event-date">
+                        <span class="day">18</span>
+                        <span class="month">JUL</span>
+                    </div>
+                </div>
+                <div class="event-details">
+                    <h3>Regional Cuisine: Tuscany</h3>
+                    <div class="event-meta">
+                        <p><i class="fa-regular fa-clock"></i> 7:00 PM - 10:00 PM</p>
+                        <p><i class="fa-solid fa-ticket"></i> $85 per person</p>
+                    </div>
+                    <p class="event-description">Experience the rustic flavors of Tuscany in this special dining event. Chef Marco will prepare traditional Tuscan dishes using authentic ingredients and techniques, accompanied by wines from the region.</p>
+                    <a href="#" class="event-button">BOOK NOW</a>
+                </div>
+            </div>
+            
+            <div class="event-card">
+                <div class="event-image" style="background-image: url('assets/img/event-1.jpg')">
+                    <div class="event-date">
+                        <span class="day">02</span>
+                        <span class="month">AUG</span>
+                    </div>
+                </div>
+                <div class="event-details">
+                    <h3>Summer Seafood Festival</h3>
+                    <div class="event-meta">
+                        <p><i class="fa-regular fa-clock"></i> 6:00 PM - 9:00 PM</p>
+                        <p><i class="fa-solid fa-ticket"></i> $90 per person</p>
+                    </div>
+                    <p class="event-description">Celebrate the bounty of the sea with our seafood festival. Enjoy a variety of Italian seafood dishes prepared with the freshest ingredients, from classic fritto misto to elegant seafood risotto.</p>
+                    <a href="#" class="event-button">BOOK NOW</a>
+                </div>
+            </div>
+            
+            <div class="event-card">
+                <div class="event-image" style="background-image: url('assets/img/event-1.jpg')">
+                    <div class="event-date">
+                        <span class="day">15</span>
+                        <span class="month">AUG</span>
+                    </div>
+                </div>
+                <div class="event-details">
+                    <h3>Pizza & Craft Beer Pairing</h3>
+                    <div class="event-meta">
+                        <p><i class="fa-regular fa-clock"></i> 5:00 PM - 8:00 PM</p>
+                        <p><i class="fa-solid fa-ticket"></i> $55 per person</p>
+                    </div>
+                    <p class="event-description">Discover the perfect pairings of artisanal pizza and craft beer. Our chef and beer expert will guide you through a tasting of five unique pizzas, each paired with a complementary craft beer.</p>
+                    <a href="#" class="event-button">BOOK NOW</a>
+                </div>
+            </div>
+        </div>
     </div>
-</footer>
-<script>const barsLogo = document.getElementById('bars-logo');
-    const pagesTxt = document.querySelector('.pages-txt');
-    
-    barsLogo.addEventListener('click', () => {
-      pagesTxt.style.display = pagesTxt.style.display === 'flex' ? 'none' : 'flex';
-    });  </script>
+
+    <div class="private-events">
+        <div class="private-events-content">
+            <div class="private-events-text">
+                <h2>Private Events</h2>
+                <p class="subtitle">Create Unforgettable Memories</p>
+                <p>Bella Italia offers elegant private dining spaces for your special occasions. Whether you're planning a corporate event, wedding reception, birthday celebration, or family gathering, our team will work with you to create a customized experience that exceeds your expectations.</p>
+                <h3>Our Private Event Services Include:</h3>
+                <ul class="event-services">
+                    <li><i class="fa-solid fa-check"></i> Customized menus tailored to your preferences and dietary needs</li>
+                    <li><i class="fa-solid fa-check"></i> Elegant private dining rooms for groups of 10-50 guests</li>
+                    <li><i class="fa-solid fa-check"></i> Full restaurant buyout options for larger events</li>
+                    <li><i class="fa-solid fa-check"></i> Professional event planning assistance</li>
+                    <li><i class="fa-solid fa-check"></i> Audio-visual equipment for presentations</li>
+                    <li><i class="fa-solid fa-check"></i> Custom floral arrangements and decorations</li>
+                    <li><i class="fa-solid fa-check"></i> Special wine pairings and cocktail options</li>
+                </ul>
+                <a href="#" class="primary-btn">INQUIRE ABOUT PRIVATE EVENTS</a>
+            </div>
+            <div class="private-events-gallery">
+                <div class="gallery-image" style="background-image: url('assets/img/event-1.jpg')"></div>
+                <div class="gallery-image" style="background-image: url('assets/img/img-one.jpg')"></div>
+                <div class="gallery-image" style="background-image: url('assets/img/img-two.jpg')"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="event-spaces">
+        <h2>Our Event Spaces</h2>
+        <p class="subtitle">Elegant venues for every occasion</p>
+        
+        <div class="spaces-container">
+            <div class="space-card">
+                <div class="space-image" style="background-image: url('assets/img/event-1.jpg')"></div>
+                <div class="space-details">
+                    <h3>The Tuscany Room</h3>
+                    <p class="space-capacity"><i class="fa-solid fa-users"></i> Capacity: 20 guests</p>
+                    <p class="space-description">Our intimate Tuscany Room features warm lighting, rustic decor, and a cozy fireplace, perfect for small gatherings and business dinners.</p>
+                    <ul class="space-features">
+                        <li><i class="fa-solid fa-wifi"></i> High-speed WiFi</li>
+                        <li><i class="fa-solid fa-tv"></i> 65" Smart TV</li>
+                        <li><i class="fa-solid fa-volume-high"></i> Sound system</li>
+                        <li><i class="fa-solid fa-temperature-arrow-up"></i> Climate control</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="space-card">
+                <div class="space-image" style="background-image: url('assets/img/img-one.jpg')"></div>
+                <div class="space-details">
+                    <h3>The Venetian Hall</h3>
+                    <p class="space-capacity"><i class="fa-solid fa-users"></i> Capacity: 50 guests</p>
+                    <p class="space-description">Our elegant Venetian Hall features high ceilings, chandeliers, and large windows, creating a sophisticated atmosphere for larger celebrations.</p>
+                    <ul class="space-features">
+                        <li><i class="fa-solid fa-wifi"></i> High-speed WiFi</li>
+                        <li><i class="fa-solid fa-tv"></i> Projector and screen</li>
+                        <li><i class="fa-solid fa-music"></i> Premium sound system</li>
+                        <li><i class="fa-solid fa-champagne-glasses"></i> Private bar</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="space-card">
+                <div class="space-image" style="background-image: url('assets/img/img-two.jpg')"></div>
+                <div class="space-details">
+                    <h3>The Garden Terrace</h3>
+                    <p class="space-capacity"><i class="fa-solid fa-users"></i> Capacity: 35 guests</p>
+                    <p class="space-description">Our charming Garden Terrace offers an al fresco dining experience surrounded by lush greenery and twinkling lights, ideal for spring and summer events.</p>
+                    <ul class="space-features">
+                        <li><i class="fa-solid fa-umbrella-beach"></i> Covered options available</li>
+                        <li><i class="fa-solid fa-temperature-arrow-down"></i> Outdoor heaters</li>
+                        <li><i class="fa-solid fa-music"></i> Sound system</li>
+                        <li><i class="fa-solid fa-tree"></i> Beautiful landscaping</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="testimonials event-testimonials">
+        <div class="section-header">
+            <h2>What Our Event Clients Say</h2>
+            <p>Memorable experiences shared by our guests</p>
+        </div>
+        <div class="testimonial-slider">
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>We hosted our daughter's wedding rehearsal dinner at Bella Italia and it was absolutely perfect. The staff went above and beyond to make the evening special, and our guests are still raving about the food!</p>
+                    <div class="testimonial-author">
+                        <div class="author-img"></div>
+                        <div class="author-info">
+                            <h4>Patricia Williams</h4>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>Our company's quarterly dinner at Bella Italia was a huge success. The private dining room was elegant, the service was attentive, and the custom menu they created for us was exceptional.</p>
+                    <div class="testimonial-author">
+                        <div class="author-img"></div>
+                        <div class="author-info">
+                            <h4>Michael Thompson</h4>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>We celebrated my parents' 50th anniversary at Bella Italia and it couldn't have been more perfect. Chef Marco created a special menu that incorporated family favorites, and the staff made everyone feel so welcome.</p>
+                    <div class="testimonial-author">
+                        <div class="author-img"></div>
+                        <div class="author-info">
+                            <h4>Sarah Rodriguez</h4>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+
+    <div class="event-faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How far in advance should I book my event?</h3>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>We recommend booking at least 4-6 weeks in advance for private events, especially for weekend dates. For larger events or during peak seasons (holidays, summer), 2-3 months advance booking is advisable.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Is there a minimum guest count or spending requirement?</h3>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Minimum requirements vary depending on the event space, day of the week, and time of year. The Tuscany Room typically requires a minimum of 10 guests, while the Venetian Hall requires a minimum of 25 guests. Please contact our events team for specific details.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Can you accommodate dietary restrictions and allergies?</h3>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, we can accommodate most dietary restrictions and allergies with advance notice. Please inform our events team of any special dietary needs when planning your event, and we will work with you to create suitable menu options.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Can I bring my own cake for a special occasion?</h3>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, you may bring your own cake for special occasions. There is a cake cutting fee of $2 per person. Alternatively, our pastry chef can create a custom cake for your event with advance notice.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Do you provide decorations for private events?</h3>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>We provide standard table settings, linens, and candles. For additional decorations, we can work with you or your event planner. Any decorations must be approved in advance and should not damage our facilities.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta-section">
+        <div class="cta-content">
+            <h2>Ready to Plan Your Special Event?</h2>
+            <p>Contact our events team to start planning your perfect occasion</p>
+            <div class="cta-buttons">
+                <a href="/pages/contact.html" class="primary-btn">CONTACT US</a>
+                <a href="#" class="secondary-btn">DOWNLOAD EVENT BROCHURE</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>Bella <span>Italia</span></h3>
+                <p>Welcome to Bella Italia where the rich flavors of Italy come alive in every dish we serve. Nestled in the heart of community, our family-owned restaurant offers an authentic Italian dining experience.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="TripAdvisor"><i class="fa-brands fa-tripadvisor"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/pages/menu.html">Menu</a></li>
+                    <li><a href="/pages/reservation.html">Reservation</a></li>
+                    <li><a href="/pages/events.html">Events</a></li>
+                    <li><a href="/pages/about.html">About Us</a></li>
+                    <li><a href="/pages/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><i class="fa-solid fa-envelope"></i> info@bellaitalia.com</li>
+                    <li><i class="fa-solid fa-phone"></i> 964-622-3903</li>
+                    <li><i class="fa-solid fa-location-dot"></i> 616 Willa River Suite 610</li>
+                    <li><i class="fa-solid fa-clock"></i> Mon-Sun: 11:00 AM - 11:00 PM</li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Newsletter</h4>
+                <p>Subscribe to our newsletter for special offers and updates</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email" required>
+                    <button type="submit">SUBSCRIBE</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Bella Italia. All Rights Reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#header" class="back-to-top" id="backToTop">
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
+

@@ -3,119 +3,369 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reservation</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/assets/css/reservation.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair Display">
-</head>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/reservation.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,500,600,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Italiana&display=swap">
+    <title>Reservation | Bella Italia</title>
 </head>
 <body>
-    <div class="header">
+    <div class="header" id="header">
         <div class="head-one">
             <span class="left-head-one">
-                <span style="display: flex;gap: 10px;">
+                <span class="contact-item">
                     <i class="fa-solid fa-envelope"></i>
-                    <p>INFO@MAIL.COM</p>
+                    <p>INFO@BELLAITALIA.COM</p>
                 </span>   
-                <span  style="display: flex;gap: 10px;">
+                <span class="contact-item">
                     <i class="fa-solid fa-phone"></i>
                     <p>964-622-3903</p>
                 </span> 
             </span>
             <span class="right-head-one">
-                <span style="display: flex;" class="head-search">
+                <span class="head-search">
                     <span class="search-icon">
-                        <i style="font-size: 10px;" class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-magnifying-glass"></i>
                     </span>
-                    <input class="search-bar" type="search">
+                    <input class="search-bar" type="search" placeholder="Search...">
                 </span>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-instagram"></i>
+                <div class="social-icons">
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
             </span>
         </div>
         <div class="head-two">
             <span class="icon-head">
-                <a style="text-decoration: none;" href="index.html"><span style="color: #8b0000; cursor: pointer;">Bella <span style="color: #808000;">Italia</span></span></a>
+                <a href="/index.html">
+                    <span class="logo-text">Bella <span class="logo-accent">Italia</span></span>
+                </a>
             </span>
-            <span style="display: flex; gap: 2vw;" class="pages">
-                <i id="bars-logo" style="color: #8b0000;cursor: pointer;" class="fa-solid fa-bars"></i>
-                    <div style="gap: 2vw;display: none;" class="pages-txt">
-                        <a href="/pages/reservation.html">RESERVATION</a>
-                        <a href="#">MENU</a>
-                        <a href="/pages/events.html">EVENTS</a>
-                        <a href="/pages/about.html">ABOUT US</a>
-                        <a href="#">CONTACT</a>
+            <span class="pages">
+                <i id="bars-logo" class="fa-solid fa-bars"></i>
+                <div class="pages-txt">
+                    <a href="/index.html">HOME</a>
+                    <a href="/pages/menu.html">MENU</a>
+                    <a href="/pages/reservation.html" class="active">RESERVATION</a>
+                    <a href="/pages/events.html">EVENTS</a>
+                    <a href="/pages/about.html">ABOUT US</a>
+                    <a href="/pages/contact.html">CONTACT</a>
+                </div>
+                <div class="cart-icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-count">0</span>
+                </div>
+            </span>
+        </div>
+    </div>
+
+    <div class="page-banner">
+        <div class="banner-overlay"></div>
+        <div class="banner-content">
+            <h1>Make a Reservation</h1>
+            <div class="breadcrumbs">
+                <a href="/index.html">Home</a> / <span>Reservation</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="reservation-container">
+        <div class="reservation-form-container">
+            <h2>Book Your Table</h2>
+            <form class="reservation-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
                     </div>
-                <hr style="border: 1px solid #8b0000;">
-                <i style="color: #8b0000;cursor: pointer;margin-right: 8vw;" class="fa-solid fa-cart-shopping"></i>
-            </span>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="time">Time</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="guests">Number of Guests</label>
+                        <select id="guests" name="guests" required>
+                            <option value="">Select</option>
+                            <option value="1">1 Person</option>
+                            <option value="2">2 People</option>
+                            <option value="3">3 People</option>
+                            <option value="4">4 People</option>
+                            <option value="5">5 People</option>
+                            <option value="6">6 People</option>
+                            <option value="7">7 People</option>
+                            <option value="8">8 People</option>
+                            <option value="9">9 People</option>
+                            <option value="10">10 People</option>
+                            <option value="more">More than 10</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="occasion">Occasion (Optional)</label>
+                        <select id="occasion" name="occasion">
+                            <option value="">Select</option>
+                            <option value="birthday">Birthday</option>
+                            <option value="anniversary">Anniversary</option>
+                            <option value="business">Business Dinner</option>
+                            <option value="date">Date Night</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="requests">Special Requests (Optional)</label>
+                    <textarea id="requests" name="requests" rows="4"></textarea>
+                </div>
+                
+                <button type="submit" class="reservation-btn">CONFIRM RESERVATION</button>
+            </form>
+        </div>
+        
+        <div class="reservation-info">
+            <h2>Reservation Information</h2>
+            <p>We look forward to welcoming you to Bella Italia. To ensure the best possible dining experience, please review our reservation policies below.</p>
+            
+            <div class="info-card">
+                <h3><i class="fa-solid fa-circle-info"></i> Reservation Policies</h3>
+                <ul>
+                    <li>Reservations are recommended, especially for dinner and weekends.</li>
+                    <li>For parties of 8 or more, please call us directly at 964-622-3903 to make a reservation.</li>
+                    <li>We hold reservations for 15 minutes past the scheduled time. After that, tables may be released to accommodate waiting guests.</li>
+                    <li>If you need to cancel or modify your reservation, please do so at least 24 hours in advance.</li>
+                </ul>
+            </div>
+            
+            <div class="info-card">
+                <h3><i class="fa-solid fa-utensils"></i> Seating Options</h3>
+                <p>We offer several seating options to enhance your dining experience:</p>
+                <ul>
+                    <li><strong>Main Dining Room:</strong> Elegant and comfortable atmosphere</li>
+                    <li><strong>Garden Terrace:</strong> Al fresco dining surrounded by greenery (weather permitting)</li>
+                    <li><strong>Private Dining Room:</strong> Available for special occasions and larger parties</li>
+                    <li><strong>Bar Area:</strong> Casual seating with full menu service</li>
+                </ul>
+                <p>Please indicate your seating preference in the Special Requests field, and we will do our best to accommodate you.</p>
+            </div>
+            
+            <div class="info-card">
+                <h3><i class="fa-solid fa-clock"></i> Opening Hours</h3>
+                <div class="opening-hours">
+                    <table class="hours-table">
+                        <tr>
+                            <td>Monday - Thursday</td>
+                            <td>11:00 AM - 10:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Friday - Saturday</td>
+                            <td>11:00 AM - 11:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>11:00 AM - 9:00 PM</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="booking">
-        <h1 class="booking-heading" style="color: white;font-family: 'Playfair Display'; font-weight: 500;font-size:60px;margin: 5%;backdrop-filter: blur(15px);z-index: 998;">Book Your Table</h1>
-        <div class="booking-form">
-            <input type="text" placeholder="Your Name">
-            <input type="text" placeholder="Email">
-            <span style="display: flex; gap: 2vw;width: 50%;">
-                <input style="width: 50%;" type="number" placeholder="Phone No">
-                <input style="width: 50%;" type="number" placeholder="Number Of Members">
-            </span>
-            <span style="display: flex; gap: 2vw;width: 50%;">
-                <input style="width: 50%;" type="text" placeholder="City">
-                <input style="width: 50%;" type="number" placeholder="Table No">
-            </span> 
-            <input style="height: 15vh;" type="text" placeholder="Message ..."> 
-            <input style="width: 25%; background-color: #808000;color: aliceblue;" type="submit" value="Book Table">
-        </div>      
-    </div>
-<footer>
-    <div style="width: 50%;margin-top: 5vh;">
-        <span style="color: #8b0000; font-weight: 700;font-size: xx-large;">Bella <span style="color: #808000;">Italia</span></span>
-        <br><br>
-        <p class="footer-txt" style="color: #818080;">Wellcome to bella italia where the  rich flavors of italy comes alive in every dish we serve.Nested in the heart of community, owr family owned restaurant.</p>
-        <br>
-        <div class="footer-logo" style="display: flex;gap: 10px;margin-top: 5vh;">
-            <i style="color: #8b0000;" class="fa-brands fa-twitter"></i>
-            <i style="color: #8b0000;" class="fa-brands fa-facebook-f"></i>
-            <i style="color: #8b0000;" class="fa-brands fa-instagram"></i>
+
+    <div class="special-occasions">
+        <h2>Special Occasions</h2>
+        <p class="subtitle">Make your celebration memorable at Bella Italia</p>
+        
+        <div class="occasions-container">
+            <div class="occasion-card">
+                <div class="occasion-image" style="background-image: url('assets/img/event-1.jpg')"></div>
+                <div class="occasion-content">
+                    <h3>Birthdays</h3>
+                    <p>Celebrate your special day with us! We offer complimentary dessert for the birthday person and can arrange for custom cakes with advance notice.</p>
+                    <a href="/pages/contact.html" class="occasion-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="occasion-card">
+                <div class="occasion-image" style="background-image: url('assets/img/img-one.jpg')"></div>
+                <div class="occasion-content">
+                    <h3>Anniversaries</h3>
+                    <p>Celebrate your love story at Bella Italia. We can arrange for a romantic table setting, champagne toast, and special menu options.</p>
+                    <a href="/pages/contact.html" class="occasion-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="occasion-card">
+                <div class="occasion-image" style="background-image: url('assets/img/img-two.jpg')"></div>
+                <div class="occasion-content">
+                    <h3>Corporate Events</h3>
+                    <p>Impress your clients or reward your team with an authentic Italian dining experience. We offer customized menus and private dining options.</p>
+                    <a href="/pages/contact.html" class="occasion-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
         </div>
     </div>
-    <hr>
-    <div style="display: flex;flex-direction: column;margin-top: 7vh;">
-        <h3 class="footer-heading">ABOUT FORM</h3>
-        <br>
-        <a href="#">Reservation</a>
-        <br>
-        <a href="#">Events</a>
-        <br>
-        <a href="#">About Us</a>
-        <br>
-        <a href="#">Contact Us</a>
-        <br>
+
+    <div class="testimonials testimonials-reservation">
+        <div class="section-header">
+            <h2>What Our Guests Say</h2>
+            <p>Memorable dining experiences shared by our guests</p>
+        </div>
+        <div class="testimonial-slider">
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>We celebrated our anniversary at Bella Italia and it was perfect. They gave us a quiet corner table with a complimentary glass of prosecco. The service was attentive without being intrusive.</p>
+                    <div class="testimonial-author">
+                        <div class="author-img"></div>
+                        <div class="author-info">
+                            <h4>James & Emily Wilson</h4>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>I booked a table for my mother's 70th birthday and the staff went above and beyond to make it special. They even brought out a surprise dessert with a candle and the whole restaurant sang for her!</p>
+                    <div class="testimonial-author">
+                        <div class="author-img"></div>
+                        <div class="author-info">
+                            <h4>Lisa Thompson</h4>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>The reservation process was seamless and they accommodated our last-minute request to add two more people to our party. The food was exceptional and everyone had a wonderful time.</p>
+                    <div class="testimonial-author">
+                        <div class="author-img"></div>
+                        <div class="author-info">
+                            <h4>Michael Rodriguez</h4>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
     </div>
-    <hr>
-    <div style="display: flex;flex-direction: column;margin-top: 7vh;">
-        <h3 class="footer-heading">CONTACT</h3>
-        <br>
-        <a href="#">info@form.com</a>
-        <br>
-        <a href="#">882-587-3025</a>
-        <br>
-        <a href="#">616 Willa River Suite 610</a>
-        <br>
+
+    <div class="cta-section">
+        <div class="cta-content">
+            <h2>Ready to Experience Authentic Italian Cuisine?</h2>
+            <p>Book your table now or contact us for special arrangements</p>
+            <div class="cta-buttons">
+                <a href="#" class="primary-btn">BOOK A TABLE</a>
+                <a href="/pages/contact.html" class="secondary-btn">CONTACT US</a>
+            </div>
+        </div>
     </div>
-    <div style="display: flex;flex-direction: column; gap: 2vh;margin-top: 15vh;">
-        <input style="height: 5vh;border-radius: 30px; width: 10vw;background-color: white;border: 1.5px solid #808000;" type="text" placeholder="Email">
-        <input style="height: 5vh;border-radius: 30px; width: 10vw; background-color: #808000;color: white;border: none;" type="submit" value="SUBMIT">
-    </div>
-</footer>
-<script>const barsLogo = document.getElementById('bars-logo');
-    const pagesTxt = document.querySelector('.pages-txt');
-    
-    barsLogo.addEventListener('click', () => {
-      pagesTxt.style.display = pagesTxt.style.display === 'flex' ? 'none' : 'flex';
-    });  </script>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>Bella <span>Italia</span></h3>
+                <p>Welcome to Bella Italia where the rich flavors of Italy come alive in every dish we serve. Nestled in the heart of community, our family-owned restaurant offers an authentic Italian dining experience.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="TripAdvisor"><i class="fa-brands fa-tripadvisor"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/pages/menu.html">Menu</a></li>
+                    <li><a href="/pages/reservation.html">Reservation</a></li>
+                    <li><a href="/pages/events.html">Events</a></li>
+                    <li><a href="/pages/about.html">About Us</a></li>
+                    <li><a href="/pages/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><i class="fa-solid fa-envelope"></i> info@bellaitalia.com</li>
+                    <li><i class="fa-solid fa-phone"></i> 964-622-3903</li>
+                    <li><i class="fa-solid fa-location-dot"></i> 616 Willa River Suite 610</li>
+                    <li><i class="fa-solid fa-clock"></i> Mon-Sun: 11:00 AM - 11:00 PM</li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Newsletter</h4>
+                <p>Subscribe to our newsletter for special offers and updates</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email" required>
+                    <button type="submit">SUBSCRIBE</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Bella Italia. All Rights Reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#header" class="back-to-top" id="backToTop">
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
+

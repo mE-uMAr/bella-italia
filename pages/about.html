@@ -3,116 +3,355 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/assets/css/about.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair Display">
-</head>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,500,600,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Italiana&display=swap">
+    <title>About Us | Bella Italia</title>
 </head>
 <body>
-    <div class="header">
+    <div class="header" id="header">
         <div class="head-one">
             <span class="left-head-one">
-                <span style="display: flex;gap: 10px;">
+                <span class="contact-item">
                     <i class="fa-solid fa-envelope"></i>
-                    <p>INFO@MAIL.COM</p>
+                    <p>INFO@BELLAITALIA.COM</p>
                 </span>   
-                <span  style="display: flex;gap: 10px;">
+                <span class="contact-item">
                     <i class="fa-solid fa-phone"></i>
                     <p>964-622-3903</p>
                 </span> 
             </span>
             <span class="right-head-one">
-                <span style="display: flex;" class="head-search">
+                <span class="head-search">
                     <span class="search-icon">
-                        <i style="font-size: 10px;" class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-magnifying-glass"></i>
                     </span>
-                    <input class="search-bar" type="search">
+                    <input class="search-bar" type="search" placeholder="Search...">
                 </span>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-instagram"></i>
+                <div class="social-icons">
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
             </span>
         </div>
         <div class="head-two">
             <span class="icon-head">
-                <a style="text-decoration: none;" href="index.html"><span style="color: #8b0000; cursor: pointer;">Bella <span style="color: #808000;">Italia</span></span></a>
+                <a href="/index.html">
+                    <span class="logo-text">Bella <span class="logo-accent">Italia</span></span>
+                </a>
             </span>
-            <span style="display: flex; gap: 2vw;" class="pages">
-                <i id="bars-logo" style="color: #8b0000;cursor: pointer;" class="fa-solid fa-bars"></i>
-                    <div style="gap: 2vw;display: none;" class="pages-txt">
-                        <a href="/pages/reservation.html">RESERVATION</a>
-                        <a href="#">MENU</a>
-                        <a href="/pages/events.html">EVENTS</a>
-                        <a href="/pages/about.html">ABOUT US</a>
-                        <a href="#">CONTACT</a>
+            <span class="pages">
+                <i id="bars-logo" class="fa-solid fa-bars"></i>
+                <div class="pages-txt">
+                    <a href="/index.html">HOME</a>
+                    <a href="/pages/menu.html">MENU</a>
+                    <a href="/pages/reservation.html">RESERVATION</a>
+                    <a href="/pages/events.html">EVENTS</a>
+                    <a href="/pages/about.html" class="active">ABOUT US</a>
+                    <a href="/pages/contact.html">CONTACT</a>
+                </div>
+                <div class="cart-icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-count">0</span>
+                </div>
+            </span>
+        </div>
+    </div>
+
+    <div class="page-banner">
+        <div class="banner-overlay"></div>
+        <div class="banner-content">
+            <h1>About Us</h1>
+            <div class="breadcrumbs">
+                <a href="/index.html">Home</a> / <span>About Us</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-story">
+        <div class="about-story-content">
+            <div class="about-story-text">
+                <h2>Our Story</h2>
+                <p class="subtitle">A Tradition of Italian Excellence Since 2010</p>
+                <p>Bella Italia was born from a passion for authentic Italian cuisine and a desire to share the rich culinary traditions of Italy with our community. Founded by the Rossi family in 2010, our restaurant has grown from a small trattoria to a beloved dining destination.</p>
+                <p>Our journey began when Chef Marco Rossi, who trained in the finest kitchens of Naples and Rome, decided to bring his expertise and family recipes to America. Together with his wife Sofia, they created a warm, inviting space where guests could experience the true flavors of Italy.</p>
+                <p>Today, Bella Italia continues to honor those traditions while embracing innovation. Every dish we serve is prepared with the freshest ingredients, many imported directly from Italy, and crafted with the same care and attention to detail that has defined Italian cooking for generations.</p>
+                <div class="signature">
+                    <img src="assets/img/signature.png" alt="Chef Marco Rossi's signature">
+                    <p>Chef Marco Rossi</p>
+                </div>
+            </div>
+            <div class="about-story-image">
+                <img src="assets/img/restaurent-bg.jpeg" alt="Bella Italia restaurant interior">
+            </div>
+        </div>
+    </div>
+
+    <div class="values-section">
+        <h2>Our Values</h2>
+        <p class="subtitle">What Makes Bella Italia Special</p>
+        <div class="values-container">
+            <div class="value-card">
+                <div class="value-icon">
+                    <i class="fa-solid fa-utensils"></i>
+                </div>
+                <h3>Authentic Cuisine</h3>
+                <p>We stay true to traditional Italian recipes and cooking methods, using imported ingredients to create dishes that transport you to Italy with every bite.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">
+                    <i class="fa-solid fa-leaf"></i>
+                </div>
+                <h3>Fresh Ingredients</h3>
+                <p>We source the freshest local and imported ingredients, working with trusted suppliers to ensure quality in every dish we serve.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+                <h3>Family Atmosphere</h3>
+                <p>We treat every guest like family, creating a warm and welcoming environment where memories are made around the table.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <h3>Passion for Excellence</h3>
+                <p>We pour our hearts into every aspect of your dining experience, from food preparation to service, striving for excellence in all we do.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="team-section">
+        <h2>Meet Our Team</h2>
+        <p class="subtitle">The Faces Behind Your Favorite Italian Dishes</p>
+        <div class="team-container">
+            <div class="team-member">
+                <div class="member-image"></div>
+                <div class="member-info">
+                    <h3>Marco Rossi</h3>
+                    <p class="member-title">Executive Chef & Owner</p>
+                    <p class="member-bio">With over 25 years of culinary experience in Italy and abroad, Chef Marco brings authentic Italian flavors and techniques to every dish at Bella Italia.</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="member-image"></div>
+                <div class="member-info">
+                    <h3>Sofia Rossi</h3>
+                    <p class="member-title">General Manager</p>
+                    <p class="member-bio">Sofia ensures that every guest receives exceptional service and leaves with a smile, managing the front-of-house operations with warmth and efficiency.</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="member-image"></div>
+                <div class="member-info">
+                    <h3>Antonio Bianchi</h3>
+                    <p class="member-title">Head Chef</p>
+                    <p class="member-bio">Trained in Florence, Antonio specializes in regional Italian cuisine and leads our kitchen team with creativity and precision.</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="member-image"></div>
+                <div class="member-info">
+                    <h3>Isabella Conti</h3>
+                    <p class="member-title">Pastry Chef</p>
+                    <p class="member-bio">Isabella creates our delectable Italian desserts, from classic tiramisu to seasonal specialties that perfectly end your dining experience.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="milestones-section">
+        <h2>Our Journey</h2>
+        <p class="subtitle">Key Milestones in the Bella Italia Story</p>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>2010</h3>
+                    <p>Bella Italia opens its doors, offering a small menu of classic Italian dishes in a cozy 30-seat restaurant.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>2013</h3>
+                    <p>Expansion to our current location, tripling our seating capacity and adding a wood-fired pizza oven imported from Naples.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>2016</h3>
+                    <p>Awarded "Best Italian Restaurant" by the City Food Guide for the first of five consecutive years.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>2019</h3>
+                    <p>Launched our catering services and private dining room for special events and celebrations.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>2022</h3>
+                    <p>Chef Marco featured on national television, showcasing our signature dishes and family recipes.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Today</h3>
+                    <p>Continuing our tradition of excellence while innovating and growing our Bella Italia family.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="testimonials about-testimonials">
+        <div class="section-header">
+            <h2>What Our Customers Say</h2>
+            <p>The authentic Italian experience that keeps our guests coming back</p>
+        </div>
+        <div class="testimonial-slider">
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>The best Italian food I've had outside of Italy. The pasta is made fresh daily and you can really taste the difference. The service is impeccable!</p>
+                    <div class="testimonial-author">
+                        <div class="author-img"></div>
+                        <div class="author-info">
+                            <h4>Maria Johnson</h4>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
                     </div>
-                <hr style="border: 1px solid #8b0000;">
-                <i style="color: #8b0000;cursor: pointer;margin-right: 8vw;" class="fa-solid fa-cart-shopping"></i>
-            </span>
-        </div>
-    </div>
-    <script>const barsLogo = document.getElementById('bars-logo');
-        const pagesTxt = document.querySelector('.pages-txt');
-        
-        barsLogo.addEventListener('click', () => {
-          pagesTxt.style.display = pagesTxt.style.display === 'flex' ? 'none' : 'flex';
-        });  </script>
-    <div class="about">
-        <h1 class="about-heading" style="color: #8b0000; font-family: 'Playfair Display'; font-size: 50px;font-weight: 520;display: flex;justify-content: center;padding: 5%;">About Us</h1>
-        <div class="about-section">
-            <div style="margin-left: 5%;" class="about-text">
-                <h1 class="about-txt-heading" style="font-size: x-large;">Where Every Meal is a Celebration of <br>Tradition and Passion</h1><br>
-                <p class="about-content" style="color: #818080;">"Welcome to Bella Italia, where the rich flavors of Italy <br>come alive in every dish we serve. Nestled in the heart of <br>our community, our family-owned restaurant has been a <br>cherished gathering place for food lovers, friends, and <br>families for over a decade. At Bella Italia, dining is more <br>than just a meal; it's an experience filled with <br>tradition and passion."</p><br>
-                <a class="about-btn" style="color: #808000;" href="#">Learn More</a>
+                </div>
             </div>
-            <div style="margin-right: 5%;" class="about-img">
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>The atmosphere is so authentic and welcoming. We celebrated our anniversary here and the staff made it so special. The wine selection is outstanding!</p>
+                    <div class="testimonial-author">
+                        <div class="author-img"></div>
+                        <div class="author-info">
+                            <h4>Robert Smith</h4>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>I've been coming to Bella Italia for years and the quality has never wavered. Their seasonal menu always offers something new to try!</p>
+                    <div class="testimonial-author">
+                        <div class="author-img"></div>
+                        <div class="author-info">
+                            <h4>Jennifer Davis</h4>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+
+    <div class="cta-section">
+        <div class="cta-content">
+            <h2>Experience Authentic Italian Cuisine</h2>
+            <p>Join us for a memorable dining experience at Bella Italia</p>
+            <div class="cta-buttons">
+                <a href="/pages/reservation.html" class="primary-btn">BOOK A TABLE</a>
+                <a href="/pages/menu.html" class="secondary-btn">VIEW OUR MENU</a>
             </div>
         </div>
     </div>
-    <hr style="border: 5px solid #8b0000;">
-<footer>
-    <div style="width: 50%;margin-top: 5vh;">
-        <span style="color: #8b0000; font-weight: 700;font-size: xx-large;">Bella <span style="color: #808000;">Italia</span></span>
-        <br><br>
-        <p class="footer-txt" style="color: #818080;">Wellcome to bella italia where the  rich flavors of italy comes alive in every dish we serve.Nested in the heart of community, owr family owned restaurant.</p>
-        <br>
-        <div class="footer-logo" style="display: flex;gap: 10px;margin-top: 5vh;">
-            <i style="color: #8b0000;" class="fa-brands fa-twitter"></i>
-            <i style="color: #8b0000;" class="fa-brands fa-facebook-f"></i>
-            <i style="color: #8b0000;" class="fa-brands fa-instagram"></i>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>Bella <span>Italia</span></h3>
+                <p>Welcome to Bella Italia where the rich flavors of Italy come alive in every dish we serve. Nestled in the heart of community, our family-owned restaurant offers an authentic Italian dining experience.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="TripAdvisor"><i class="fa-brands fa-tripadvisor"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/pages/menu.html">Menu</a></li>
+                    <li><a href="/pages/reservation.html">Reservation</a></li>
+                    <li><a href="/pages/events.html">Events</a></li>
+                    <li><a href="/pages/about.html">About Us</a></li>
+                    <li><a href="/pages/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><i class="fa-solid fa-envelope"></i> info@bellaitalia.com</li>
+                    <li><i class="fa-solid fa-phone"></i> 964-622-3903</li>
+                    <li><i class="fa-solid fa-location-dot"></i> 616 Willa River Suite 610</li>
+                    <li><i class="fa-solid fa-clock"></i> Mon-Sun: 11:00 AM - 11:00 PM</li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Newsletter</h4>
+                <p>Subscribe to our newsletter for special offers and updates</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email" required>
+                    <button type="submit">SUBSCRIBE</button>
+                </form>
+            </div>
         </div>
-    </div>
-    <hr>
-    <div style="display: flex;flex-direction: column;margin-top: 7vh;">
-        <h3 class="footer-heading">ABOUT FORM</h3>
-        <br>
-        <a href="#">Reservation</a>
-        <br>
-        <a href="#">Events</a>
-        <br>
-        <a href="#">About Us</a>
-        <br>
-        <a href="#">Contact Us</a>
-        <br>
-    </div>
-    <hr>
-    <div style="display: flex;flex-direction: column;margin-top: 7vh;">
-        <h3 class="footer-heading">CONTACT</h3>
-        <br>
-        <a href="#">info@form.com</a>
-        <br>
-        <a href="#">882-587-3025</a>
-        <br>
-        <a href="#">616 Willa River Suite 610</a>
-        <br>
-    </div>
-    <div style="display: flex;flex-direction: column; gap: 2vh;margin-top: 15vh;">
-        <input style="height: 5vh;border-radius: 30px; width: 10vw;background-color: white;border: 1.5px solid #808000;" type="text" placeholder="Email">
-        <input style="height: 5vh;border-radius: 30px; width: 10vw; background-color: #808000;color: white;border: none;" type="submit" value="SUBMIT">
-    </div>
-</footer>
-<script src="script.js"></script>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Bella Italia. All Rights Reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#header" class="back-to-top" id="backToTop">
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
+

@@ -1,0 +1,183 @@
+/* Menu Page Styles */
+.menu-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.menu-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.menu-tab {
+  padding: 12px 25px;
+  background-color: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  border-radius: 30px;
+}
+
+.menu-tab:hover,
+.menu-tab.active {
+  background-color: var(--primary);
+  color: white;
+}
+
+.menu-section {
+  display: none;
+}
+
+.menu-section.active {
+  display: block;
+  animation: fadeIn 0.5s ease;
+}
+
+.menu-section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--primary);
+  font-size: 2.2rem;
+}
+
+.menu-section-title span {
+  font-size: 1.2rem;
+  color: var(--gray-text);
+  font-style: italic;
+  font-weight: normal;
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 30px;
+}
+
+.menu-item {
+  display: flex;
+  background-color: white;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item-image {
+  width: 150px;
+  background-size: cover;
+  background-position: center;
+}
+
+.menu-item-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.menu-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.menu-item-header h3 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.price {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.description {
+  color: var(--gray-text);
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.menu-item-tags {
+  display: flex;
+  gap: 10px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.vegetarian {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.gluten-free {
+  background-color: #fff8e1;
+  color: #ff8f00;
+}
+
+.spicy {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .menu-items {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-tab {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .menu-section-title {
+    font-size: 1.8rem;
+  }
+
+  .menu-section-title span {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .menu-item {
+    flex-direction: column;
+  }
+
+  .menu-item-image {
+    width: 100%;
+    height: 200px;
+  }
+
+  .menu-tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-tab {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+}
+
